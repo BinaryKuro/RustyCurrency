@@ -1,6 +1,6 @@
 # RustyCurrency
 
-A REST API built with Rust and Axum framework that provides country information including flags and currency codes.
+A REST API built with Rust and Axum framework that provides country information including flags and currency codes for **all 195 UN-recognized countries**.
 
 ## Features
 
@@ -8,6 +8,8 @@ A REST API built with Rust and Axum framework that provides country information 
 - Support for multiple countries in a single request (comma-separated)
 - Returns country flag emoji and currency code
 - Case-insensitive country name lookup
+- **Complete coverage of all 195 UN-recognized countries**
+- Support for common country name aliases (e.g., USA/United States, UAE, Czechia, etc.)
 - Comprehensive test suite
 
 ## Installation
@@ -59,7 +61,9 @@ The test suite includes:
 - ✅ Unknown country handling
 - ✅ Whitespace handling
 - ✅ Mixed valid/invalid country queries
-- ✅ Multiple supported countries
+- ✅ Comprehensive coverage tests (countries from all continents)
+- ✅ African countries coverage
+- ✅ Country name aliases
 
 ## API Usage
 
@@ -114,23 +118,38 @@ Response:
 
 ## Supported Countries
 
-- Japan (🇯🇵 - JPY)
-- Korea/South Korea (🇰🇷 - KRW)
-- United States/USA (🇺🇸 - USD)
-- United Kingdom/UK (🇬🇧 - GBP)
-- China (🇨🇳 - CNY)
-- Germany (🇩🇪 - EUR)
-- France (🇫🇷 - EUR)
-- Canada (🇨🇦 - CAD)
-- Australia (🇦🇺 - AUD)
-- Brazil (🇧🇷 - BRL)
-- India (🇮🇳 - INR)
-- Mexico (🇲🇽 - MXN)
-- Singapore (🇸🇬 - SGD)
-- Switzerland (🇨🇭 - CHF)
-- Sweden (🇸🇪 - SEK)
-- Norway (🇳🇴 - NOK)
-- Denmark (🇩🇰 - DKK)
+**All 195 UN-recognized countries are supported!** 🌍
+
+The API includes support for all countries from every continent:
+
+### Examples by Region
+
+**Asia**: Afghanistan, Bangladesh, China, India, Indonesia, Iran, Iraq, Israel, Japan, Jordan, Kazakhstan, Kuwait, Laos, Lebanon, Malaysia, Mongolia, Myanmar (Burma), Nepal, North Korea, Oman, Pakistan, Palestine, Philippines, Qatar, Saudi Arabia, Singapore, South Korea, Sri Lanka, Syria, Tajikistan, Thailand, Turkey, Turkmenistan, UAE, Uzbekistan, Vietnam, Yemen
+
+**Europe**: Albania, Andorra, Armenia, Austria, Azerbaijan, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czech Republic (Czechia), Denmark, Estonia, Finland, France, Georgia, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, Russia, San Marino, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Ukraine, United Kingdom (UK), Vatican City
+
+**Africa**: Algeria, Angola, Benin, Botswana, Burkina Faso, Burundi, Cabo Verde, Cameroon, Central African Republic, Chad, Comoros, Congo, Democratic Republic of the Congo, Côte d'Ivoire, Djibouti, Egypt, Equatorial Guinea, Eritrea, Eswatini (Swaziland), Ethiopia, Gabon, Gambia, Ghana, Guinea, Guinea-Bissau, Kenya, Lesotho, Liberia, Libya, Madagascar, Malawi, Mali, Mauritania, Mauritius, Morocco, Mozambique, Namibia, Niger, Nigeria, Rwanda, São Tomé and Príncipe, Senegal, Seychelles, Sierra Leone, Somalia, South Africa, South Sudan, Sudan, Tanzania, Togo, Tunisia, Uganda, Zambia, Zimbabwe
+
+**North America**: Antigua and Barbuda, Bahamas, Barbados, Belize, Canada, Costa Rica, Cuba, Dominica, Dominican Republic, El Salvador, Grenada, Guatemala, Haiti, Honduras, Jamaica, Mexico, Nicaragua, Panama, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Trinidad and Tobago, United States (USA)
+
+**South America**: Argentina, Bolivia, Brazil, Chile, Colombia, Ecuador, Guyana, Paraguay, Peru, Suriname, Uruguay, Venezuela
+
+**Oceania**: Australia, Fiji, Kiribati, Marshall Islands, Micronesia, Nauru, New Zealand, Palau, Papua New Guinea, Samoa, Solomon Islands, Tonga, Tuvalu, Vanuatu
+
+### Common Aliases Supported
+
+- USA, United States
+- UK, United Kingdom
+- UAE, United Arab Emirates
+- Czechia, Czech Republic
+- Burma, Myanmar
+- Swaziland, Eswatini
+- Korea, South Korea
+- Vatican, Vatican City
+- East Timor, Timor-Leste
+- Ivory Coast, Côte d'Ivoire
+- Cape Verde, Cabo Verde
+- And many more!
 
 ## Technologies Used
 
